@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <!-- Gray background -->
+    <rect width="64" height="64" rx="8" fill="#888888"/>
+    <!-- White letter "P" centered -->
+    <text x="55%" y="55%" alignment-baseline="middle" text-anchor="middle" font-size="50" font-family="Arial" fill="#FFFFFF" font-weight="bold">P</text>
+</svg>
