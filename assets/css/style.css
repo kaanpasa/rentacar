@@ -485,3 +485,89 @@ a{ transition: var(--transition);}
     --background: var(--lavender-blush);
     --color: var(--red-salsa);
 }
+
+/*Get Start*/
+
+.get-started .section-title{ margin-bottom: 25px;}
+
+.get-started-list{
+    display: grid;
+    gap: 20px;
+}
+
+.get-started-card{
+    background: var(--white);
+    padding: 20px;
+    border-radius: var(--radius-18);
+    border: 1px solid var(--white);
+    transition: var(--transition);
+}
+
+.get-started-card:hover{
+    background: var(--alice-blue-2);
+    box-shadow: var(--shadow-1);
+}
+
+.get-started-card .card-icon{
+    background: var(--icon-card-bg, var(--columbia-blue));
+    color: var(--icon-card-color, var(--carolina-blue));
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius-14);
+    margin-bottom: 20px;
+}
+
+.get-started-card .card-icon ion-icon{
+    font-size: 26px;
+    --ionicon-stroke-width: 45px;
+}
+
+.get-started-card .icon-1{
+    --icon-card-bg: var(--mimi-pink);
+    --icon-card-color: var(--deep-cerise);
+}
+
+.get-started-card .icon-2{
+    --icon-card-bg: var(--columbia-blue);
+    --icon-card-color: var(--carolina-blue);
+}
+
+.get-started-card .icon-3{
+    --icon-card-bg: var(--honey-dew);
+    --icon-card-color: var(--medium-sea-green);
+}
+
+.get-started-card .icon-4{
+    --icon-card-bg: var(--pale-purple-pantone);
+    --icon-card-color: var(--slate-blue);
+}
+
+.get-started-card .card-title{
+    color: var(--space-cadet);
+    font-family: var(--ff-nunito);
+    font-weight: var(--fw-400);
+    margin-bottom: 15px;
+}
+
+.get-started-card .card-text{ color: var(--independence);}
+
+.get-started-card .card-link{
+    position: relative;
+    color: var(--carolina-blue);
+    width: max-content;
+}
+
+.get-started-card .card-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--carolina-blue);
+    transition: var(--transition);
+}
+
+.get-started-card .card-link:is(:hover, :focus)::before{ width: 100%;}
